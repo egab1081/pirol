@@ -27,9 +27,9 @@ header {
       font-size: 12px;
       color: black; }
       header nav a:hover {
-        color: #20cdc7; }
+        color: #21bfb9; }
     header nav .active {
-      color: #20cdc7; }
+      color: #21bfb9; }
 
 .info {
   display: flex;
@@ -45,7 +45,7 @@ header {
       margin: 0 0 30px 0; }
     .info article p {
       font-size: 20px;
-      color: #787878; }
+      color: #838383; }
 
 table {
   border-spacing: 0; }
@@ -77,10 +77,10 @@ table {
       margin: 0 0 5% 0; }
     .self-presentation article p {
       font-size: 20px;
-      color: #f5f5f5;
+      color: #f6f6f6;
       margin: 0 20%; }
 .self-career {
-  background-color: #20cdc7;
+  background-color: #21bfb9;
   color: white;
   display: flex;
   flex-direction: row;
@@ -117,7 +117,7 @@ table {
         font-size: 30px;
         margin: 0; }
       .self-letter_info-inner p {
-        color: #787878;
+        color: #838383;
         font-size: 18px;
         margin: 5% 0; }
 .self-offer {
@@ -132,7 +132,7 @@ table {
       font-size: 28px;
       margin: 0 0 3% 0; }
     .self-offer article p {
-      color: #787878;
+      color: #838383;
       font-size: 18px;
       margin: 0 0 6% 0; }
     .self-offer article a {
@@ -160,10 +160,10 @@ footer {
       footer section .company h2 {
         margin: 0 0 30px 0; }
       footer section .company p {
-        color: #bcbcbc; }
+        color: #dddddd; }
     footer section .contact-info {
       margin: 5% 5% 5% 0;
-      color: #bcbcbc; }
+      color: #dddddd; }
     footer section .contact-number {
       font-family: 'Work Sans', sans-serif; }
     footer section .social {
@@ -174,7 +174,7 @@ footer {
     footer section a {
       color: white;
       text-decoration: none;
-      color: #bcbcbc; }
+      color: #dddddd; }
       footer section a:hover {
         color: white; }
     footer section .column {
