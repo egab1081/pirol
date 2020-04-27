@@ -16,69 +16,71 @@
 		</nav>
 	</header>
 	<main>
-		<section class="self-presentation">
-			<article>
-				<h1>Amelia Woods</h1>
-				<p>I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development.</p>
-			</article>
-		</section>
-		<section class="self-career">
-			<div class="self-career-experience">
-				<div class="self-career-experience_icon">
-					<img src="assets/images/pe-7s-portfolio.png" alt="">
-				</div>
-				<div class="self-career-experience_info">
-					<h1>548</h1>
-					<p>PROJECTS COMPLITED</p>
-				</div>
-			</div>
-			<div class="self-career-experience">
-				<div class="self-career-experience_icon">
-					<img src="assets/images/pe-7s-clock.png" alt="">
-				</div>
-				<div class="self-career-experience_info">
-					<h1>1465</h1>
-					<p>WORKING HOURS</p>
-				</div>
-			</div>
-			<div class="self-career-experience">
-				<div class="self-career-experience_icon">
-					<img src="assets/images/pe-7s-star.png" alt="">
-				</div>
-				<div class="self-career-experience_info">
-					<h1>612</h1>
-					<p>POSITIVE FEEDBACKS</p>
-				</div>
-			</div>
-			<div class="self-career-experience">
-				<div class="self-career-experience_icon">
-					<img src="assets/images/pe-7s-like.png" alt="">
-				</div>
-				<div class="self-career-experience_info">
-					<h1 class="number">713</h1>
-					<p>POSITIVE FEEDBACKS</p>
-				</div>
-			</div>
-		</section>
-		<section class="self-letter">
-			<div class="self-letter_lightGrey"></div>
-			<div class="self-letter_info">
+		<div id="app">
+			<section class="self-presentation">
 				<article>
-					<div class="self-letter_info-inner">
-						<h1>About me</h1>
-						<p>Given let waters air sea had you'll, may seed abundantly fish.<!-- <br/> -->Were, you'll earth forth winged above brought. Own darkness<!-- <br/> -->they're him can't fourth sea place have.<br/><br/>So the above May stars cattle fruitful face shall. Tree it, winged.<!-- <br/> -->Every signs male firmament us. Morning him.</p>
-						<img src="assets/images/signature.png" alt="">
-					</div>
+					<h1>{{name}}</h1>
+					<p>{{qualification}}</p>
 				</article>
-			</div>
-		</section>
-		<section class="self-offer">
-			<article>
-				<h1>Need a Project?</h1>
-				<p>Let us know what you're looking for in an agency. We'll take a look and see</br>if this could be the start of something beautiful.</p>
-				<a href="">LET'S TALK</a>
-			</article>
-		</section>
+			</section>
+			<section class="self-career">
+				<div class="self-career-experience">
+					<div class="self-career-experience_icon">
+						<img src="assets/images/pe-7s-portfolio.png" alt="">
+					</div>
+					<div class="self-career-experience_info">
+						<h1>{{projectsComplited()}}</h1>
+						<p>PROJECTS COMPLITED</p>
+					</div>
+				</div>
+				<div class="self-career-experience">
+					<div class="self-career-experience_icon">
+						<img src="assets/images/pe-7s-clock.png" alt="">
+					</div>
+					<div class="self-career-experience_info">
+						<h1>{{workingHours()}}</h1>
+						<p>WORKING HOURS</p>
+					</div>
+				</div>
+				<div class="self-career-experience">
+					<div class="self-career-experience_icon">
+						<img src="assets/images/pe-7s-star.png" alt="">
+					</div>
+					<div class="self-career-experience_info">
+						<h1>{{positiveFeedbacks()}}</h1>
+						<p>POSITIVE FEEDBACKS</p>
+					</div>
+				</div>
+				<div class="self-career-experience">
+					<div class="self-career-experience_icon">
+						<img src="assets/images/pe-7s-like.png" alt="">
+					</div>
+					<div class="self-career-experience_info">
+						<h1 class="number">{{happyClients()}}</h1>
+						<p>HAPPY CLIENTS</p>
+					</div>
+				</div>
+			</section>
+			<section class="self-letter">
+				<div class="self-letter_lightGrey"></div>
+				<div class="self-letter_info">
+					<article>
+						<div class="self-letter_info-inner">
+							<h1>About me</h1>
+							<p>{{aboutMe}}</p>
+							<img src="assets/images/signature.png" alt="">
+						</div>
+					</article>
+				</div>
+			</section>
+			<section class="self-offer">
+				<article>
+					<h1>Need a Project?</h1>
+					<p>Let us know what you're looking for in an agency. We'll take a look and see</br>if this could be the start of something beautiful.</p>
+					<a href="">LET'S TALK</a>
+				</article>
+			</section>
+		</div>
 	</main>
 	<footer>
 		<section>
@@ -111,5 +113,25 @@
 		</section>
 	</footer>
 	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script>
+	    var app = new Vue({
+	        el: '#app',
+	        data:{name: 'Amelia Woods', qualification:'I am a Graphic & Web Designer based in New York, specializing in User Interface Design and Development.', aboutMe:"Given let waters air sea had you'll, may seed abundantly fish.Were, you'll earth forth winged above brought. Own darknessthey're him can't fourth sea place have.So the above May stars cattle fruitful face shall. Tree it, winged.Every signs male firmament us. Morning him."},
+	        methods:{
+	            projectsComplited: function(){
+	                return 548;
+	            },
+	            workingHours: function(){
+	                return 1465;
+	            },
+	            positiveFeedbacks: function(){
+	                return 612;
+	            },
+	            happyClients: function(){
+	                return 713;
+	            },
+	        }
+	    })	
+	</script>
 </body>
 </html>
